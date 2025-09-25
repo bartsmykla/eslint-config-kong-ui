@@ -50,7 +50,7 @@
     "std-env": "^3.9.0",
     "stylelint": "^16.24.0",
     "stylelint-config-html": "^1.1.0",
-    "stylelint-config-recommended-scss": "^15.0.1",
+    "stylelint-config-recommended-scss": "^16.0.1",
     "stylelint-config-recommended-vue": "^1.6.1",
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.12.1",
