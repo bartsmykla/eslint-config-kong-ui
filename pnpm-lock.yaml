@@ -42,13 +42,13 @@ importers:
         specifier: ^9.0.0
         version: 9.0.9
       '@vitejs/plugin-vue':
-        specifier: ^6.0.0
+        specifier: ^6.0.1
         version: 6.0.1(vite@7.1.7(@types/node@20.14.2)(jiti@2.6.0)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.2))
       '@vitest/browser':
-        specifier: ^3.2.0
+        specifier: ^3.2.4
         version: 3.2.4(playwright@1.55.1)(vite@7.1.7(@types/node@20.14.2)(jiti@2.6.0)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)(yaml@2.8.1))(vitest@3.2.4)
       '@vitest/ui':
-        specifier: ^3.2.0
+        specifier: ^3.2.4
         version: 3.2.4(vitest@3.2.4)
       '@vue/language-server':
         specifier: ^3.0.0
@@ -129,7 +129,7 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4(eslint@9.36.0(jiti@2.6.0))(rollup@4.52.2)(vite@7.1.7(@types/node@20.14.2)(jiti@2.6.0)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)(yaml@2.8.1))
       vitest:
-        specifier: ^3.2.0
+        specifier: ^3.2.4
         version: 3.2.4(@types/node@20.14.2)(@vitest/browser@3.2.4)(@vitest/ui@3.2.4)(jiti@2.6.0)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)(yaml@2.8.1)
       vue:
         specifier: ^3.5.0
@@ -890,6 +890,7 @@ packages:
 
   '@evilmartians/lefthook@1.12.3':
     resolution: {integrity: sha512-MtXIt8h+EVTv5tCGLzh9UwbA/LRv6esdPJOHlxr8NDKHbFnbo8PvU5uVQcm3PAQTd4DZN3HoyokqrwGwntoq6w==}
+    cpu: [x64, arm64, ia32]
     os: [darwin, linux, win32]
     hasBin: true
 
@@ -9669,7 +9670,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.40.0(typescript@5.9.2)
       '@typescript-eslint/types': 8.40.0
-      debug: 4.3.5
+      debug: 4.4.3(supports-color@8.1.1)
       typescript: 5.9.2
     transitivePeerDependencies:
       - supports-color
@@ -13431,7 +13432,7 @@ snapshots:
 
   parse-json@8.1.0:
     dependencies:
-      '@babel/code-frame': 7.24.7
+      '@babel/code-frame': 7.27.1
       index-to-position: 0.1.2
       type-fest: 4.19.0
 
