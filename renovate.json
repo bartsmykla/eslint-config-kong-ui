@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>Kong/public-shared-renovate:kong-frontend-config.json"
+    "github>bartsmykla/public-shared-renovate:kong-frontend-config.json"
   ],
   "packageRules": [
     {
@@ -14,5 +14,21 @@
       ],
       "enabled": false
     }
+  ],
+  "prBodyNotes": [
+    "---",
+    "- depName: `{{{depName}}}`",
+    "- packageName: `{{{packageName}}}`",
+    "- sourceUrl: `{{{sourceUrl}}}`",
+    "- datasource: `{{{datasource}}}`",
+    "- manager: `{{{manager}}}`",
+    "{{#if depType }}- depType: `{{{depType}}}`{{/if}}",
+    "{{#if categories }}- categories: `{{{categories}}}`{{/if}}",
+    "{{#if commitMessagePrefix }}- commitMessagePrefix: `{{{commitMessagePrefix}}}`{{/if}}",
+    "{{#if commitMessageAction }}- commitMessageAction: `{{{commitMessageAction}}}`{{/if}}",
+    "{{#if commitMessageTopic }}- commitMessageTopic: `{{{commitMessageTopic}}}`{{/if}}",
+    "{{#if commitMessageExtra }}- commitMessageExtra: `{{{commitMessageExtra}}}`{{/if}}",
+    "{{#if commitMessageSuffix }}- commitMessageSuffix: `{{{commitMessageSuffix}}}`{{/if}}",
+    "---"
   ]
 }
