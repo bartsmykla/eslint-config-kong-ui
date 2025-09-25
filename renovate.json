@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>Kong/public-shared-renovate:kong-frontend-config.json"
+    "github>bartsmykla/public-shared-renovate:kong-frontend-config.json"
   ],
   "packageRules": [
     {
