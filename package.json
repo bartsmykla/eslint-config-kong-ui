@@ -14,18 +14,20 @@
     "./cypress": "./configs/cypress.mjs",
     "./package.json": "./package.json"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
-    "semantic-release": "semantic-release",
-    "commit": "cz"
-  },
   "dependencies": {
+    "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
     "@eslint/js": "^9.33.0",
+    "@evilmartians/lefthook": "^1.12.4",
+    "@kong/eslint-config-kong-ui": "^1.5.5",
+    "@nuxt/eslint": "^1.9.0",
+    "@playwright/test": "1.55.0",
     "@stylistic/eslint-plugin": "^5.2.3",
+    "@stylistic/stylelint-plugin": "^3.1.3",
+    "@testing-library/user-event": "^14.6.1",
+    "@testing-library/vue": "^8.1.0",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^9.35.0",
     "eslint-plugin-cypress": "^5.1.0",
     "eslint-plugin-jsonc": "^2.20.1",
     "eslint-plugin-n": "^17.21.3",
@@ -33,8 +35,25 @@
     "eslint-plugin-vue": "^10.4.0",
     "globals": "^15.15.0",
     "jsonc-eslint-parser": "^2.4.0",
+    "nuxt": "^4.1.2",
+    "playwright-core": "^1.55.0",
+    "sass-embedded": "^1.92.1",
+    "scule": "^1.3.0",
+    "start-server-and-test": "^2.1.0",
+    "std-env": "^3.9.0",
+    "stylelint": "^16.24.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recommended-scss": "^15.0.1",
+    "stylelint-config-recommended-vue": "^1.6.1",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.12.1",
+    "typescript": "^5.9.2",
     "typescript-eslint": "^8.39.0",
-    "vue-eslint-parser": "^10.2.0"
+    "vite-plugin-eslint2": "^5.0.4",
+    "vitest": "^3.2.4",
+    "vue-eslint-parser": "^10.2.0",
+    "vue-tsc": "^3.0.8",
+    "wrangler": "^4.35.0"
   },
   "peerDependencies": {
     "eslint": ">= 9.32.0"
@@ -42,13 +61,9 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
     "@evilmartians/lefthook": "^1.11.16",
-    "@semantic-release/changelog": "^6.0.3",
     "commitizen": "^4.3.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.33.0",
-    "semantic-release": "^24.2.7"
+    "eslint": "^9.33.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -73,50 +88,6 @@
     "url": "https://github.com/Kong/eslint-config-kong-ui/issues"
   },
   "homepage": "https://github.com/Kong/eslint-config-kong-ui#readme",
-  "release": {
-    "branches": [
-      "+([0-9])?(.{+([0-9]),x}).x",
-      "main",
-      "next",
-      "next-major",
-      {
-        "name": "beta",
-        "prerelease": true
-      },
-      {
-        "name": "alpha",
-        "prerelease": true
-      }
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "CHANGELOG.md"
-        }
-      ],
-      [
-        "@semantic-release/npm",
-        {
-          "npmPublish": false
-        }
-      ],
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "CHANGELOG.md",
-            "package.json",
-            "src/component-list.ts",
-            "scripts/utilities/__snapshots__/generate-icon-components.spec.ts.snap"
-          ]
-        }
-      ],
-      "@semantic-release/github"
-    ]
-  },
   "engines": {
     "node": ">=18.0.0"
   },
