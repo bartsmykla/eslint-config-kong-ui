@@ -93,22 +93,22 @@ importers:
         specifier: ^3.9.0
         version: 3.9.0
       stylelint:
-        specifier: ^16.23.0
+        specifier: ^16.23.1
         version: 16.24.0(typescript@5.9.2)
       stylelint-config-html:
-        specifier: ^1.0.0
+        specifier: ^1.1.0
         version: 1.1.0(postcss-html@1.8.0)(stylelint@16.24.0(typescript@5.9.2))
       stylelint-config-recommended-scss:
-        specifier: ^16.0.0
+        specifier: ^16.0.1
         version: 16.0.1(postcss@8.5.6)(stylelint@16.24.0(typescript@5.9.2))
       stylelint-config-recommended-vue:
-        specifier: ^1.6.0
+        specifier: ^1.6.1
         version: 1.6.1(postcss-html@1.8.0)(stylelint@16.24.0(typescript@5.9.2))
       stylelint-order:
         specifier: ^7.0.0
         version: 7.0.0(stylelint@16.24.0(typescript@5.9.2))
       stylelint-scss:
-        specifier: ^6.12.0
+        specifier: ^6.12.1
         version: 6.12.1(stylelint@16.24.0(typescript@5.9.2))
       typescript:
         specifier: ^5.9.2
@@ -878,6 +878,7 @@ packages:
 
   '@evilmartians/lefthook@1.12.3':
     resolution: {integrity: sha512-MtXIt8h+EVTv5tCGLzh9UwbA/LRv6esdPJOHlxr8NDKHbFnbo8PvU5uVQcm3PAQTd4DZN3HoyokqrwGwntoq6w==}
+    cpu: [x64, arm64, ia32]
     os: [darwin, linux, win32]
     hasBin: true
 
@@ -3742,10 +3743,6 @@ packages:
 
   fast-fifo@1.3.2:
     resolution: {integrity: sha512-/d9sfos4yxzpwkDkuN7k2SqFKtYNmCTzgfEpz82x34IM9/zc8KGxQoXg1liNC/izpRM/MBdt44Nmx41ZWqk+FQ==}
-
-  fast-glob@3.3.2:
-    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
-    engines: {node: '>=8.6.0'}
 
   fast-glob@3.3.3:
     resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
@@ -7745,7 +7742,7 @@ snapshots:
   '@commitlint/is-ignored@19.8.1':
     dependencies:
       '@commitlint/types': 19.8.1
-      semver: 7.6.3
+      semver: 7.7.2
 
   '@commitlint/lint@19.8.1':
     dependencies:
@@ -9535,7 +9532,7 @@ snapshots:
       '@typescript-eslint/types': 8.40.0
       '@typescript-eslint/typescript-estree': 8.40.0(typescript@5.9.2)
       '@typescript-eslint/visitor-keys': 8.40.0
-      debug: 4.3.5
+      debug: 4.4.3(supports-color@8.1.1)
       eslint: 9.36.0(jiti@2.6.0)
       typescript: 5.9.2
     transitivePeerDependencies:
@@ -9545,7 +9542,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.40.0(typescript@5.9.2)
       '@typescript-eslint/types': 8.40.0
-      debug: 4.3.5
+      debug: 4.4.3(supports-color@8.1.1)
       typescript: 5.9.2
     transitivePeerDependencies:
       - supports-color
@@ -9579,11 +9576,11 @@ snapshots:
       '@typescript-eslint/tsconfig-utils': 8.40.0(typescript@5.9.2)
       '@typescript-eslint/types': 8.40.0
       '@typescript-eslint/visitor-keys': 8.40.0
-      debug: 4.3.5
-      fast-glob: 3.3.2
+      debug: 4.4.3(supports-color@8.1.1)
+      fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.6.3
+      semver: 7.7.2
       ts-api-utils: 2.1.0(typescript@5.9.2)
       typescript: 5.9.2
     transitivePeerDependencies:
@@ -10557,7 +10554,7 @@ snapshots:
       conventional-commits-filter: 5.0.0
       handlebars: 4.7.8
       meow: 13.2.0
-      semver: 7.6.3
+      semver: 7.7.2
 
   conventional-commit-types@3.0.0: {}
 
@@ -11203,7 +11200,7 @@ snapshots:
   eslint-compat-utils@0.5.1(eslint@9.36.0(jiti@2.6.0)):
     dependencies:
       eslint: 9.36.0(jiti@2.6.0)
-      semver: 7.6.3
+      semver: 7.7.2
 
   eslint-compat-utils@0.6.4(eslint@9.36.0(jiti@2.6.0)):
     dependencies:
@@ -11467,14 +11464,6 @@ snapshots:
 
   fast-fifo@1.3.2: {}
 
-  fast-glob@3.3.2:
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.7
-
   fast-glob@3.3.3:
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -11564,7 +11553,7 @@ snapshots:
     dependencies:
       detect-file: 1.0.0
       is-glob: 4.0.3
-      micromatch: 4.0.7
+      micromatch: 4.0.8
       resolve-dir: 1.0.1
 
   flat-cache@4.0.1:
@@ -11835,7 +11824,7 @@ snapshots:
   globby@14.0.1:
     dependencies:
       '@sindresorhus/merge-streams': 2.3.0
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       ignore: 5.3.2
       path-type: 5.0.0
       slash: 5.1.0
@@ -11962,7 +11951,7 @@ snapshots:
   http-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.1
-      debug: 4.4.1
+      debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -11977,7 +11966,7 @@ snapshots:
   https-proxy-agent@7.0.4:
     dependencies:
       agent-base: 7.1.1
-      debug: 4.4.1
+      debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -12023,7 +12012,7 @@ snapshots:
 
   import-from-esm@1.3.4:
     dependencies:
-      debug: 4.4.1
+      debug: 4.4.3(supports-color@8.1.1)
       import-meta-resolve: 4.1.0
     transitivePeerDependencies:
       - supports-color
